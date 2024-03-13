@@ -6,6 +6,7 @@ import Home from "./Home"
 import TopicsList from "./Topics/TopicsList"
 import ArticlesList from "./Articles/ArticlesList"
 import getTopics from "./getTopics"
+import SingleArticle from "./SingleArticle/SingleArticle"
 
 function App() {
   const [user, setUser] = useState([
@@ -39,6 +40,10 @@ function App() {
       <Route 
       path='/all-articles'
       element={<ArticlesList/>}
+      ></Route>
+      <Route
+      path='/article/:article_id'
+      element={<SingleArticle/>}
       ></Route>
      </Routes>
     </>

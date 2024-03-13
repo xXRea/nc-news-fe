@@ -8,4 +8,5 @@ function getArticles(topics) {
     })
 }
 
+ 
 export default getArticles
