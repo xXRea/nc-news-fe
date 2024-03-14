@@ -23,7 +23,7 @@ function App() {
     getTopics(topics).then((topic) => {
      setTopics(topic)
     })
-     }, [topics])
+     }, [])
 
   return (
     <>
